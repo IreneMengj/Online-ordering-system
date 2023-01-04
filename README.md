@@ -1,10 +1,10 @@
 # reggie_take_out  
-<h2>introduction</h2>
+<h2>1. Introduction</h2>
 Reggie is an enterprise-level project using <b>SpringBoot + SSM</b> Framework. It was a software product customized for catering enterprises. This system is mainly divided into the management background and the front-end operation. Employees can use the background to manage dishes, set meals, orders, and so on. Customers can browse dishes and place orders through the mobile application.<br>
 <br>
 This project will be developed in two phases. The first phase is to realize basic functions: 1. Employees can operate the backend system; 2. Customers can log in to the order system and place orders. The second phase is to optimize and upgrade the system and improve system access performance. The first phase has been finished.<br>
 
-<h2>Technology Selection</h2>
+<h2>2. Technology Selection</h2>
 
 <table>
   <tr>
@@ -38,5 +38,5 @@ This project will be developed in two phases. The first phase is to realize basi
   
 </table>
 
-<h2>Function Frame</h2>
+<h2>3. Function Frame</h2>
 Continue to update...
