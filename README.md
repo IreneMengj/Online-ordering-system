@@ -39,4 +39,34 @@ This project will be developed in two phases. The first phase is to realize basi
 </table>
 
 <h2>3. Function Frame</h2>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Functions</th>
+  </tr>
+  <tr>
+    <td>mobile app(customers)</td>
+    <td>
+    log in through the phone number;<br>
+    browse dishes;<br>
+    add to shopping cart;<br>
+    browse history orders;<br>
+    manage addresses.  
+    </td>
+    
+  </tr>
+  <tr>
+    <td>management background(enterprise)</td>
+    <td>menu management;<br>
+      setmeal management;<br>
+      category management;<br>
+      employee management;<br>
+      order management.
+    </td>
+  </tr>
+  </table>
+
+
+<br>
 Continue to update...
