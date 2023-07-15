@@ -90,5 +90,6 @@
                 <version>2.4.5</version>
             </plugin>
         </plugins>
+        <finalName>deliver_ease</finalName>     
     </build>
 </project>
