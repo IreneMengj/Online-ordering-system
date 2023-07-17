@@ -12,7 +12,16 @@ function logoutApi(){
     'method': 'post',
   })
 }
-
+var lang = {
+  'en': {
+    'title': 'Reggie',
+    'description': 'Reggie is a delivery management platform.'
+  },
+  'zh': {
+    'title': '瑞吉外卖管理端',
+    'description': '瑞吉是一个外卖订餐平台。'
+  }
+};
 
 const langToggleBtn = document.getElementById('lang-toggle');
 const langToggleImg = langToggleBtn.getElementsByTagName('img')[0];
