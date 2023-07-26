@@ -99,7 +99,7 @@
         :page-sizes="[10, 20, 30, 40]"
         :page-size="pageSize"
         :current-page.sync="page"
-        layout="total, sizes, prev, pager, next, jumper"
+        layout="prev, pager, next"
         :total="counts"
         @size-change="handleSizeChange"
         @current-change="handleCurrentChange"

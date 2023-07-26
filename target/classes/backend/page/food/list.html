@@ -16,7 +16,7 @@
       <div class="tableBar">
         <el-input
           v-model="input"
-          placeholder="Please enter the name of the dish"
+          placeholder="Please enter the dish name"
           style="width: 250px"
           clearable
           @keyup.enter.native="handleQuery"
@@ -104,7 +104,7 @@
               class="blueBug"
               @click="statusHandle(scope.row)"
             >
-              {{ scope.row.status == '0' ? 'stop sale' : 'open sale'}}
+              {{ scope.row.status == '0' ? 'open sale':'stop sale' }}
             </el-button>
             <el-button
               type="text"
@@ -121,7 +121,7 @@
         class="pageList"
         :page-sizes="[10, 20, 30, 40]"
         :page-size="pageSize"
-        layout="total, sizes, prev, pager, next, jumper"
+        layout="prev, pager, next"
         :total="counts"
         @size-change="handleSizeChange"
         :current-page.sync="page"

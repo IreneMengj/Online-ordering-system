@@ -91,7 +91,7 @@ public class DishController {
         redisTemplate.delete(key);
         return R.success("update successfully");
     }
-/*
+
     @GetMapping("/list")
     public R<List<Dish>> list(Dish dish){
         LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
@@ -102,45 +102,45 @@ public class DishController {
         return R.success(list);
     }
 
- */
-    @GetMapping("/list")
-    public R<List<DishDto>> list(Dish dish){
-        List<DishDto> dishDtoList=null;
-        String key= "dish_"+dish.getCategoryId()+"_"+dish.getStatus();
-        //try to get data from redis
-        dishDtoList=(List<DishDto>) redisTemplate.opsForValue().get(key);
-        //if data exist, return
-        if(dishDtoList!=null){
-            return R.success(dishDtoList);
-        }
-        //if not,select data from mysql first
 
-        LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.eq(dish.getCategoryId()!=null, Dish::getCategoryId,dish.getCategoryId());
-        queryWrapper.eq(Dish::getStatus,1);
-        queryWrapper.orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
-        List<Dish> list = dishService.list(queryWrapper);
-
-        dishDtoList  = list.stream().map((item) -> {
-            DishDto dishDto = new DishDto();
-            BeanUtils.copyProperties(item,dishDto);
-            Long categoryId = item.getCategoryId();
-
-            Category category = categoryService.getById(categoryId);
-            if(category!=null){
-                String categoryName = category.getName();
-                dishDto.setCategoryName(categoryName);}
-            Long dishId = item.getId();
-            LambdaQueryWrapper<DishFlavor> queryWrapper1 = new LambdaQueryWrapper<>();
-            queryWrapper1.eq(DishFlavor::getDishId,dishId);
-            List<DishFlavor> dishFlavors = dishFlavorService.list(queryWrapper1);
-            dishDto.setFlavors(dishFlavors);
-            return dishDto;
-        }).collect(Collectors.toList());
-        redisTemplate.opsForValue().set(key,dishDtoList,60, TimeUnit.MINUTES);
-
-        return R.success(dishDtoList);
-    }
+//    @GetMapping("/list")
+//    public R<List<DishDto>> list(Dish dish){
+//        List<DishDto> dishDtoList=null;
+//        String key= "dish_"+dish.getCategoryId()+"_"+dish.getStatus();
+//        //try to get data from redis
+//        dishDtoList=(List<DishDto>) redisTemplate.opsForValue().get(key);
+//        //if data exist, return
+//        if(dishDtoList!=null){
+//            return R.success(dishDtoList);
+//        }
+//        //if not,select data from mysql first
+//
+//        LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
+//        queryWrapper.eq(dish.getCategoryId()!=null, Dish::getCategoryId,dish.getCategoryId());
+//        queryWrapper.eq(Dish::getStatus,1);
+//        queryWrapper.orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
+//        List<Dish> list = dishService.list(queryWrapper);
+//
+//        dishDtoList  = list.stream().map((item) -> {
+//            DishDto dishDto = new DishDto();
+//            BeanUtils.copyProperties(item,dishDto);
+//            Long categoryId = item.getCategoryId();
+//
+//            Category category = categoryService.getById(categoryId);
+//            if(category!=null){
+//                String categoryName = category.getName();
+//                dishDto.setCategoryName(categoryName);}
+//            Long dishId = item.getId();
+//            LambdaQueryWrapper<DishFlavor> queryWrapper1 = new LambdaQueryWrapper<>();
+//            queryWrapper1.eq(DishFlavor::getDishId,dishId);
+//            List<DishFlavor> dishFlavors = dishFlavorService.list(queryWrapper1);
+//            dishDto.setFlavors(dishFlavors);
+//            return dishDto;
+//        }).collect(Collectors.toList());
+//        redisTemplate.opsForValue().set(key,dishDtoList,60, TimeUnit.MINUTES);
+//
+//        return R.success(dishDtoList);
+//    }
 
     @DeleteMapping
     public R<String> delete(@RequestParam List<Long> ids) {

@@ -69,7 +69,7 @@ public class SetmealController {
     }
 
     @DeleteMapping
-    @CacheEvict(value = "setmealCache",allEntries = true)
+   @CacheEvict(value = "setmealCache",allEntries = true)
     public R<String> delete(@RequestParam List<Long> ids) {
         log.info("ids:{}", ids);
         setmealService.removeWithDish(ids);
@@ -95,7 +95,6 @@ public class SetmealController {
     }
 
     @GetMapping("/list")
-
     @Cacheable(value = "setmealCache",key="#setmeal.categoryId+'_'+#setmeal.status")
     public R<List<Setmeal>> list(Setmeal setmeal){
         LambdaQueryWrapper<Setmeal> queryWrapper = new LambdaQueryWrapper<>();
