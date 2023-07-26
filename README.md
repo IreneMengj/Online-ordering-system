@@ -68,5 +68,9 @@ This project will be developed in two phases. The first phase is to realize basi
   </table>
 
 
-<br>
-Continue to update...
+Development environment construction
+- Setting up the database environment
+- The construction of Maven project
+- 
+
+
