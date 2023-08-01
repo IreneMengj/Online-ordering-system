@@ -78,7 +78,8 @@ The project is divided into three phases:
   </table>
   
 
-Development environment construction
+<h2>4. Development environment construction</h2>  
+
 - Install the following software:
   - JDK8
   - Redis
@@ -89,7 +90,7 @@ Development environment construction
 - The construction of Maven project
 
 
-<h2>Project access</h2>
+<h2>5. Project access</h2>
 
 - system management background: localhost:8080/backend/index.html
 - Login steps
@@ -103,7 +104,35 @@ Development environment construction
   - Click verification code button
   - Wait for the code to appear in the corresponding location
   - Click login to proceed
-  
+
+<h2>6. Software preview</h2>
+
+System management background:  
+
+Login
+
+<img width="433" alt="image" src="https://github.com/IreneMengj/Online-ordering-system/assets/88880169/f9ff79ba-6155-4888-b95e-d26c8e8ff9aa">
+
+Employee Management  
+
+<img width="433" alt="image" src="https://github.com/IreneMengj/Online-ordering-system/assets/88880169/90f64728-45ef-4dbe-8002-fac0027817df">
+
+Catogory Management
+
+<img width="433" alt="image" src="https://github.com/IreneMengj/Online-ordering-system/assets/88880169/3b43ca69-ee3f-423a-871d-88ddf998da20">
+
+Dish Management
+
+<img width="433" alt="image" src="https://github.com/IreneMengj/Online-ordering-system/assets/88880169/393ba08c-714f-4df0-b465-42a4dec87cd1">
+
+Setmeal Management
+
+<img width="433" alt="image" src="https://github.com/IreneMengj/Online-ordering-system/assets/88880169/33ac21fa-452c-4db0-9c68-30bc8d37f79e">
+
+Order management
+
+<img width="433" alt="image" src="https://github.com/IreneMengj/Online-ordering-system/assets/88880169/7b7312ca-da91-4fc2-a1f6-81e944c1b516">
+
 
 <h2>Reference tutorial</h2>
 
