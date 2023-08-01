@@ -89,7 +89,7 @@ Development environment construction
 - The construction of Maven project
 
 
-<h2>Software Preview</h2>
+<h2>Project access</h2>
 
 - system management background: localhost:8080/backend/index.html
 - Login steps
