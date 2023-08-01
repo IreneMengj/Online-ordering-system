@@ -1,7 +1,7 @@
 # Online ordering system
 <h2>1. Introduction</h2>
 DeliverEase is an online food ordering system built as a reference to Black Horse Programmer's "Regie Takeaway" tutorial on Bilibili. It is developed using the Spring Boot + MybatisPlus + MySQL technology stack. The tutorial video is cited in the reference section.
-
+<br/>
 DeliverEase is an online food ordering software product, which includes two parts: system management background and mobile application. The system management background is designed for internal staff of catering enterprises, enabling them to efficiently manage and maintain dishes, packages, and restaurant orders. On the other hand, the mobile application is aimed at consumers, providing them with the ability to browse dishes, add items to their shopping carts, and place orders conveniently through their mobile devices.
 
 Compared to the original tutorial, I expanded the functionality by introducing batch processing for dish and setmeal management, features that were not included in the original tutorial. Additionally, I created a comprehensive set of functions for order details, which were not present in the original tutorial. Moreover, in the mobile application, I added the capability for users to view their own orders and implemented the user logout functionality.
