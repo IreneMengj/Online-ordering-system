@@ -88,6 +88,7 @@ The project is divided into three phases:
   - Intellij (recommended）
 - Setting up the database environment
 - The construction of Maven project
+![image](https://github.com/IreneMengj/Online-ordering-system/assets/88880169/5d0822cd-269a-4ada-a141-207c43b5c5a8)
 
 
 <h2>5. Project access</h2>
