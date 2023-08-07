@@ -87,6 +87,21 @@ The project is divided into three phases:
   - Maven
   - Intellij (recommended）
 - Setting up the database environment
+   Locate the db_reggie.sql file within the reggie_take_out folder and proceed to import the SQL file using the Mac terminal,
+    as illustrated below:
+
+    1. Open the terminal application.
+    2. Use the following command to log in to your MySQL database (if MySQL is already installed and configured):
+       mysql -u your_username -p
+       * Replace your_username with your MySQL username and press Enter.
+    3. Enter your MySQL password and press Enter to log in to MySQL.
+    4. Use the following command to create database first:
+       CREATE DATABASE reggie;
+    5. Exit the MySQL
+    6. Use the following command to import db_reggie.sql:
+        mysql -u your_username -p reggie < /path/to/db_reggie.sql
+    * Replace your_username with your MySQL username, and /path/to/db_reggie.sql with the full path to the db_reggie.sql file.
+    7. Enter your MySQL password and press Enter to start the import process.
 - The construction of Maven project
 ![image](https://github.com/IreneMengj/Online-ordering-system/assets/88880169/5d0822cd-269a-4ada-a141-207c43b5c5a8)
 
