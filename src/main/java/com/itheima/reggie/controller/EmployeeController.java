@@ -22,6 +22,11 @@ public class EmployeeController {
     //login
     @Autowired
     private EmployeeService employeeService;
+
+    public EmployeeController(EmployeeService employeeService) {
+    }
+
+
     @PostMapping("/login")
     public R<Employee> login(HttpServletRequest request, @RequestBody Employee employee){
         String password = employee.getPassword();

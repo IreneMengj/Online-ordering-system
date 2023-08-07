@@ -12,9 +12,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ServletComponentScan
 @EnableTransactionManagement
 @EnableCaching
-public class ReggieApplication {
+public class DeliverEaseApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ReggieApplication.class,args);
+        SpringApplication.run(DeliverEaseApplication.class,args);
         log.info("Program starts successfully");
     }
 }

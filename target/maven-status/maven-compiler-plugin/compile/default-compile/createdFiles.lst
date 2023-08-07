@@ -2,6 +2,7 @@ com/itheima/reggie/controller/UserController.class
 com/itheima/reggie/entity/OrderDetail.class
 com/itheima/reggie/controller/CommonController.class
 com/itheima/reggie/entity/AddressBook.class
+com/itheima/reggie/dto/OrderDto.class
 com/itheima/reggie/service/OrderService.class
 com/itheima/reggie/service/SetmealService.class
 com/itheima/reggie/mapper/DishMapper.class
@@ -39,7 +40,6 @@ com/itheima/reggie/service/impl/AddressBookServiceImpl.class
 com/itheima/reggie/service/EmployeeService.class
 com/itheima/reggie/service/impl/SetmealServiceImpl.class
 com/itheima/reggie/entity/User.class
-com/itheima/reggie/ReggieApplication.class
 com/itheima/reggie/service/ShoppingCartService.class
 com/itheima/reggie/mapper/CategoryMapper.class
 com/itheima/reggie/mapper/SetMealDishMapper.class
@@ -60,6 +60,7 @@ com/itheima/reggie/common/BaseContext.class
 com/itheima/reggie/controller/DishController.class
 com/itheima/reggie/common/CustomerException.class
 com/itheima/reggie/entity/Category.class
+com/itheima/reggie/DeliverEaseApplication.class
 com/itheima/reggie/service/impl/OrderDetailServiceImpl.class
 com/itheima/reggie/entity/SetmealDish.class
 com/itheima/reggie/controller/AddressBookController.class
