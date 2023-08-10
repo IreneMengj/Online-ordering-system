@@ -1,4 +1,4 @@
-### Note: Please make sure to switch to the V1.0 branch and clone the code from there.
+### Note: Please make sure to switch to the V1.0 branch and clone the code from there. Thanks
 
 # Online ordering system
 <h2>1. Introduction</h2>  
